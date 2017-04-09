@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Deliver.Views.Card.CardDetailPage"            
+             Title="{Binding Item.Name}">
+  <ScrollView>
+    <StackLayout>
+      <Image
+        Source="{Binding Item.Image}"
+        Aspect="AspectFill"
+        HeightRequest="250"/>
+      <Grid
+        Margin="12, 0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label
+          Grid.Row="0"
+          Text="{Binding Item.Name}"
+          FontSize="Large"/>
+        <Label
+          Grid.Row="1"
+          Text="{Binding Item.Description}"
+          FontSize="Medium"/>
+      </Grid>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

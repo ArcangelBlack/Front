@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:deliver="clr-namespace:Deliver;assembly=Deliver"
+             xmlns:main="clr-namespace:Deliver.Views.Main;assembly=Deliver"
+             x:Class="Deliver.Views.MyMasterPage">
+  <MasterDetailPage.Master>
+    <main:MenuPage></main:MenuPage>
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <NavigationPage x:Name="Navigator" BarBackgroundColor="{StaticResource MainColor}">
+      <x:Arguments>
+        <main:MainPage>
+        </main:MainPage>
+      </x:Arguments>
+    </NavigationPage>
+  </MasterDetailPage.Detail>
+  </MasterDetailPage>
