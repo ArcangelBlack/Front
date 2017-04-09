@@ -6,7 +6,9 @@
              Icon="ic_action_menu.png"
              BackgroundColor="{StaticResource MenuColor}"
              BindingContext="{Binding Main, Source={StaticResource Locator}}">
-  <ListView
+  <ContentPage.Content>
+    <StackLayout VerticalOptions="FillAndExpand">
+      <ListView
     ItemsSource="{Binding Menu}"
     HasUnevenRows="True">
     <ListView.ItemTemplate>
@@ -35,4 +37,13 @@
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>
+      <!--<ListView x:Name="listView" ItemsSource="{Binding Menu}" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ImageCell Text="{Binding Title}" ImageSource="{Binding Icon}" />
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>-->
+    </StackLayout>
+  </ContentPage.Content>
 </ContentPage>

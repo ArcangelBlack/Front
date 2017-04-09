@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace Deliver.Views
+namespace Deliver.Views.Configuration
 {
-    public partial class MyMasterPage : MasterDetailPage
+    public partial class SettingsPage : ContentPage
     {
-        public MyMasterPage()
+        public SettingsPage()
         {
             InitializeComponent();
         }

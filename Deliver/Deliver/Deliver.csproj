@@ -43,7 +43,14 @@
     <Compile Include="Helpers\ObservableObject.cs" />
     <Compile Include="Helpers\ObservableRangeCollection.cs" />
     <Compile Include="Infrastructure\InstanceLocator.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Services\ApiService.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="ViewModels\User\CardsViewModel.cs" />
+    <Compile Include="ViewModels\User\CardViewModel.cs" />
+    <Compile Include="Views\Configuration\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Main\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -53,7 +60,6 @@
     <Compile Include="Services\CardService.cs" />
     <Compile Include="Services\DialogService.cs" />
     <Compile Include="Services\NavigationService.cs" />
-    <Compile Include="ViewModels\CardViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\MenuItemViewModel.cs" />
     <Compile Include="ViewModels\OrderViewModel.cs" />
@@ -69,8 +75,8 @@
     <Compile Include="Views\Main\WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MyMasterPage.xaml.cs">
-      <DependentUpon>MyMasterPage.xaml</DependentUpon>
+    <Compile Include="Views\MasterPage.xaml.cs">
+      <DependentUpon>MasterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Order\NewOrderPage.xaml.cs">
       <DependentUpon>NewOrderPage.xaml</DependentUpon>
@@ -142,7 +148,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\MyMasterPage.xaml">
+    <EmbeddedResource Include="Views\MasterPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -173,6 +179,15 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Order\NewOrderPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\Order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Configuration\SettingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

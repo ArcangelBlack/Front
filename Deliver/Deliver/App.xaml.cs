@@ -5,14 +5,13 @@ using System.Text;
 using Deliver.Views;
 using Deliver.Views.Main;
 using Xamarin.Forms;
-using CardsPage = Deliver.Views.Card.CardsPage;
 
 namespace Deliver
 {
     public partial class App : Application
     {
         public static NavigationPage Navigator { get; internal set; }
-        public static MyMasterPage Master { get; internal set; }
+        public static MasterPage Master { get; internal set; }
 
         public App()
         {

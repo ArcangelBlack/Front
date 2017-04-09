@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Deliver.Views;
+using Deliver.Views.Card;
+using Deliver.Views.Configuration;
 using Deliver.Views.Order;
 using Deliver.Views.User;
 using Xamarin.Forms;
@@ -20,15 +22,15 @@ namespace Deliver.Services
                 case "NewOrderPage":
                     await Navigate(new NewOrderPage());
                     break;
-                //case "AlarmsPage":
-                //    await Navigate(new AlarmsPage());
-                //    break;
-                case "ClientsPage":
+                case "CardsPage":
+                    await Navigate(new CardsPage());
+                    break;
+                case "UserPage":
                     await Navigate(new UserPage());
                     break;
-                //case "SettingsPage":
-                //    await Navigate(new SettingsPage());
-                //    break;
+                case "SettingsPage":
+                    await Navigate(new SettingsPage());
+                    break;
                 case "MainPage":
                     await App.Navigator.PopToRootAsync();
                     break;
@@ -50,7 +52,7 @@ namespace Deliver.Services
             switch (pageName)
             {
                 case "MasterPage":
-                    App.Current.MainPage = new MyMasterPage();
+                    App.Current.MainPage = new MasterPage();
                     break;
                 default:
                     break;

@@ -1,10 +1,9 @@
 ﻿namespace Deliver.Models
 {
-    public class Card
+    public class User 
     {
         public string Name { get; set; }
 
-        public string Description { get; set; }
+        public string Surnames { get; set; }
     }
-
 }

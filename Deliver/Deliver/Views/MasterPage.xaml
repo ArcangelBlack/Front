@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:deliver="clr-namespace:Deliver;assembly=Deliver"
              xmlns:main="clr-namespace:Deliver.Views.Main;assembly=Deliver"
-             x:Class="Deliver.Views.MyMasterPage">
+             x:Class="Deliver.Views.MasterPage">
   <MasterDetailPage.Master>
     <main:MenuPage></main:MenuPage>
   </MasterDetailPage.Master>
