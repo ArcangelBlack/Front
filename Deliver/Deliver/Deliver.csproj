@@ -46,6 +46,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Services\ApiService.cs" />
     <Compile Include="ViewModels\UserViewModel.cs" />
+    <Compile Include="ViewModels\User\CardDetailViewModel.cs" />
     <Compile Include="ViewModels\User\CardsViewModel.cs" />
     <Compile Include="ViewModels\User\CardViewModel.cs" />
     <Compile Include="Views\Configuration\SettingsPage.xaml.cs">

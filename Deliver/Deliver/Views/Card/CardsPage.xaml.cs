@@ -46,7 +46,7 @@ namespace Deliver.Views.Card
                 GlobalSettings.DetailNavigation,
                 async (parameter) =>
                 {
-                    //await Navigation.PushAsync(new XamagramItemDetailView(parameter), true);
+                    await Navigation.PushAsync(new CardDetailPage(parameter), true);
                 });
         }
 
